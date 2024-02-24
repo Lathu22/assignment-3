@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biography</title>
+<style>
+  h1 {
+    color: hotpink;
+    border-bottom: 2px dotted purple;
+  }
+
+  h2 {
+    font-style: italic;
+  }
+
+  ul.contact-details {
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: 10px;
+  }
+
+  ul.contact-details li a:hover {
+    color: green;
+  }
+</style>
+</head>
+<body>
+
+<h1>John Doe</h1>
+
+<h2>About Me</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac fermentum velit. Donec vitae orci ut arcu maximus faucibus. Nam vitae nisi ac justo mollis finibus. Sed mattis tempor neque, et suscipit libero scelerisque vel. </p>
+
+<h2>Contact Details</h2>
+<ul class="contact-details">
+  <li><a href="tel:123456789">Phone: 123-456-789</a></li>
+  <li><a href="mailto:john.doe@example.com">Email: john.doe@example.com</a></li>
+  <li><a href="https://www.example.com">Website: www.example.com</a></li>
+</ul>
+
+</body>
+</html>
