@@ -1,0 +1,101 @@
+/* Import and define fonts */
+@font-face {
+  font-family: 'SerifFont';
+  src: url('path/to/serif-font.woff2') format('woff2'),
+       url('path/to/serif-font.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SansSerifFont';
+  src: url('path/to/sans-serif-font.woff2') format('woff2'),
+       url('path/to/sans-serif-font.woff') format('woff');
+}
+
+/* Apply fonts */
+body {
+  font-family: 'SerifFont', serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SansSerifFont', sans-serif;
+  /* Define appropriate relative font sizes */
+}
+
+/* Center top level heading */
+h1 {
+  text-align: center;
+}
+
+/* Letter-spacing for headings */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.05em;
+}
+
+/* Letter-spacing and word-spacing for body text */
+p {
+  letter-spacing: 0.02em;
+  word-spacing: 0.05em;
+}
+
+/* Text indentation for paragraphs after headings */
+section > p:first-child {
+  text-indent: 20px;
+}
+
+/* Now, let's style the links */
+a {
+  color: /* Color to match the horizontal bars */;
+  text-decoration: none; /* Remove default underline */
+}
+
+a:visited,
+a:focus,
+a:hover {
+  /* Define colors for visited, focus, and hover states */
+}
+
+a:hover,
+a:focus {
+  text-decoration: none; /* Remove underline on hover and focus */
+}
+
+a:active {
+  /* Define styling for active state */
+}
+
+/* Remove default focus outline from all links */
+a:focus {
+  outline: none;
+}
+
+/* Style external links with icon */
+a[href^="http"]:not([href*="yourwebsite.com"])::after {
+  content: url('external-link-icon.png');
+  margin-left: 5px; /* Adjust as needed */
+}
+
+/* Now, let's style the lists */
+ul, ol {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  line-height: 1.5; /* Match line-height with paragraph */
+  /* Style bullets appropriately */
+}
+
+/* Finally, let's harmonize the navigation menu */
+nav {
+  /* Style to harmonize with the page */
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list style */
+}
+
+nav li {
+  /* Style list items as needed */
+}
